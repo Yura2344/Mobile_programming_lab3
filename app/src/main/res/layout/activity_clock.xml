@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ClockActivity">
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:overScrollMode="ifContentScrolls">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/time_string"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextClock
+                android:id="@+id/timeTextClock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:format24Hour="HH:mm:ss"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/date_string"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <TextClock
+                android:id="@+id/dateTextClock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:format24Hour="dd.MM.yyyy"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/timezoneTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/timerNavButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/timer_nav_string" />
+
+    <Button
+        android:id="@+id/settingsNavButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="@string/settings_nav_string" />
+
+</LinearLayout>

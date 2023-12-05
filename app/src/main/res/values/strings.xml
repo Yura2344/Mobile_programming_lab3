@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Lab 3 Clock</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tab_clock_text">Clock</string>
+    <string name="tab_timer_text">Timer</string>
+    <string name="tab_settings_text">Settings</string>
+
+    <string name="clock_nav_string">Switch to clock</string>
+    <string name="timer_nav_string">Switch to timer</string>
+    <string name="settings_nav_string">Switch to settings</string>
+
+
+    <!-- Clock strings  -->
+    <string name="timezone_display">Current time zone: %1$s %2$s</string>
+    <string name="time_string">Time</string>
+    <string name="date_string">Date</string>
+
+
+    <!-- Settings strings -->
+    <string name="set_timezone_button_text">Set timezone</string>
+    <string name="choose_timezone">Choose timezone</string>
+    <string name="timezone_applied">New timezone was set</string>
+
+    <!-- Timer strings -->
+    <string name="start_button_text">Start</string>
+    <string name="stop_button_text">Stop</string>
+    <string name="pause_button_text">Pause</string>
+    <string name="continue_button_text">Continue</string>
+    <string name="round_button_text">Round</string>
+</resources>

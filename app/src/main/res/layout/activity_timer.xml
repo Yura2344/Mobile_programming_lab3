@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TimerActivity">
+
+    <TextView
+        android:id="@+id/measuredTimeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="50sp" />
+
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/startButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/start_button_text" />
+
+        <Button
+            android:id="@+id/stopButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/stop_button_text" />
+
+        <Button
+            android:id="@+id/pauseButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/pause_button_text" />
+
+        <Button
+            android:id="@+id/roundButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/round_button_text" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_weight="1"
+        android:id="@+id/roundsListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:scrollbars="none" />
+
+    <Button
+        android:id="@+id/clockNavButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/clock_nav_string" />
+
+    <Button
+        android:id="@+id/settingsNavButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_nav_string" />
+
+</LinearLayout>
